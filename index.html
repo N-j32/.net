@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Training Website</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .parent {
+            width: 100%;
+            float: center;
+        }
+
+        .header {
+            text-align: center;
+            background-color: black;
+            border: 1px solid red;
+            color: white;
+            padding: 5px;
+        }
+
+        .left {
+            width: 25%;
+            height: 700px;
+            background-color: rgb(255, 220, 242);
+            border: 1px solid white;
+            border-radius: 15px;
+
+            float: left;
+        }
+
+        .center {
+            width: 50%;
+            height: 700px;
+            background-color: rgb(255, 179, 217);
+            border: 2px solid rgb(235, 224, 224);
+            border-radius: 15px;
+            float: left;
+
+        }
+
+        .right {
+            width: 25%;
+            height: 700px;
+            background-color: rgb(255, 230, 242);
+            border: 2px solid rgb(238, 221, 221);
+            border-radius: 15px;
+            float: left;
+        }
+
+        .footer {
+
+            text-align: center;
+            color: rgb(3, 3, 3);
+            padding: 20px;
+        }
+
+        .vertical {
+            list-style-type: circle;
+        }
+
+        a:visited {
+            color: rgb(23, 120, 23);
+        }
+
+        a:link {
+            color: rgb(37, 37, 97);
+        }
+
+
+        a:hover {
+            color: rgb(152, 12, 12);
+        }
+
+
+        a:active {
+            color: rgb(21, 64, 88);
+        }
+
+        #btn {
+
+
+            animation-name: example;
+            animation-duration: 10s;
+
+        }
+
+        #btn {
+            width: 100%;
+            height: 50px;
+
+            transition: width 2s;
+        }
+
+        #btn:hover {
+            width: 100px;
+        }
+
+
+        @keyframes example {
+            0% {
+                font-family: 'Alumni Sans Inline One';
+                font-size: 32px;
+
+                color: rgb(225, 87, 87);
+            }
+
+            25% {
+                font-family: 'Brush Script MT', cursive;
+                font-size: 38px;
+                color: rgb(204, 204, 255);
+            }
+
+            50% {
+                color: rgb(204, 255, 230);
+                font-family: 'Ballet';
+                font-size: 40px;
+            }
+
+            100% {
+                color: rgb(247, 110, 165);
+                font-family: Sofia, sans-serif;
+                font-size: 44px;
+            }
+
+        }
+
+        #b {
+
+            width: 100px;
+            height: 45px;
+            border-radius: 20px;
+            border: white;
+            background: rgb(255, 179, 217);
+            -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+            /* For Safari 3.1 to 6.0 */
+            transition: width 2s, height 2s, transform 2s;
+        }
+
+        #b:hover {
+            width: 110px;
+            height: 50px;
+            -webkit-transform: rotate(360deg);
+            /* Chrome, Safari, Opera */
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="parent">
+        <div class="header">
+            <h1 id="btn" style="font-family:Sofia, sans-serif;">W2 School</h1>
+            <a href="form.html"><button
+                    style="background-color:rgb(247, 110, 165) ;margin-top:-50px;border-radius: 20px;width:100px;height:30px;float:right;margin-right: 10px;">Register</button></a>
+        </div>
+        <div>
+            <div class="left">
+                <ul class="vertical">
+                    <li><a class="nav" href="https://www.w3schools.com/html/" target="blank">HTML</a></li><br>
+                    <li><a class="nav" href="https://www.w3schools.com/css/" target="blank">CSS</a></li><br>
+                    <li><a class="nav" href="https://www.w3schools.com/js/" target="blank">JavaScripy</a></li><br>
+                    <li><a class="nav" href="https://www.w3schools.com/js/" target="blank">Advanced JavaScript</a></li>
+                    <br>
+                    <li><a class="nav" href="https://www.w3schools.com/js/" target="blank">React</a></li><br>
+                    <li><a class="nav" href="https://angular.io/" target="blank">Angular</a></li><br>
+                    <li><a class="nav" href="https://angular.io/" target="blank">Java</a></li><br>
+                    <li><a class="nav" href="https://www.javatpoint.com/dbms-tutorial" target="blank">DBMS</a></li><br>
+                    <li><a class="nav" href="https://www.python.org/" target="blank">Python</a></li><br>
+                    <li><a class="nav" href="https://www.coursera.org/articles/software-engineer"
+                            target="blank">Software Engineering</a></li><br>
+
+                </ul>
+                <a style="float: center;padding:10px " href="form.html"><button id="b">Subscribe</button></a>
+            </div>
+            <div class="center">
+                <img style="height:400px; width:100%;border-radius: 15px;"
+                    src="https://images.unsplash.com/photo-1532012197267-da84d127e765?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZWR1Y2F0aW9ufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60">
+                <h3>About Us</h3>
+                <p style="float:left; font-size: 14px;text-align: justify;flex:75%">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Maxime inventore magni amet voluptate harum impedit aperiam blanditiis quia
+                    quibusdam consequatur voluptatibus corrupti animi, reprehenderit accusantium vel illo aliquid
+                    voluptatem iste placeat laboriosam! Animi aut et voluptatibus suscipit optio velit, numquam
+                    voluptatum fugiat esse eum rerum, aspernatur magnam voluptate ducimus nihil quis dolorum illum? Iure
+                    assumenda odit beatae, fuga reprehenderit quidem. Odio, qui reprehenderit maxime tempora ipsam animi
+                    incidunt at excepturi labore in nobis suscipit accusantium voluptas nostrum! Aliquid enim asperiores
+                    . Totam possimus asperiores minima laboriosam at quo recusandae iusto assumenda ipsa, eum,
+                   </p>
+                <img style="height:150px;width:50%;float:right"
+                    src="https://www.careerindia.com/img/600x40/2020/10/abdulkalamquotesaboutlife-1602703475.jpg">
+
+            </div>
+            <div class="right">
+                <iframe style="border-radius: 15px;" src="https://www.youtube.com/embed/il_t1WVLNxk" height="300"
+                    width="310"></iframe>
+                <iframe src="https://www.youtube.com/embed/il_t1WVLNxk/" height="300" width="310"></iframe>
+
+            </div>
+        </div>
+        <div class="footer">
+            <h4>&copy;www.w2school.com</h4>
+        </div>
+
+    </div>
+</body>
+
+</html>

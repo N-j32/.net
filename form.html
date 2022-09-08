@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title>Form Elements</title>
+</head>
+<style>
+    * {
+        background: rgb(192,61,127);
+background: linear-gradient(90deg, rgba(192,61,127,1) 5%, rgba(148,187,233,1) 51%, rgba(148,187,233,1) 95%);
+    }
+</style>
+
+<body>
+    <h1 style="text-align:center;">Registration Form</h1>
+    <form action="">
+        <fieldset>
+            <legend style="color: rgb(194, 221, 234);font-size: 20px;"><b>Trainee Register Details</b></legend>
+            <label style="color:rgb(162, 202, 235) ;">First Name</label><br>
+            <input style="background-color: white;" ;type="text" name="fname" required><br><br>
+            <label>Last Name</label><br>
+            <input type="text" name="lname" required><br><br>
+            <label>Date of birth</label><br>
+            <input type="date" required><br><br>
+            <label>Age</label><br>
+            <input type="number" required min="0"><br><br>
+            <label>email</label><br>
+            <input type="email" name="email" required><br><br>
+            <label>Password</label><br>
+            <input type="password" name="password" required><br><br>
+            <label>Gender</label><br>
+            <input type="radio" id="gender" name="gender" value="Female">
+              <label for="Female">Female</label><br>
+              <input type="radio" id="gender" name="gender" value="male">
+              <label for="male">Male</label><br><br>
+
+            <label>Address</label><br>
+            <textarea></textarea><br><br>
+            <label>Select course</label>
+            <select name="course">
+                <optgroup label="DOTNET">
+                    <option>.net mvc</option>
+                    <option>.net core</option>
+                </optgroup>
+                <optgroup label="Java">
+                    <option>.net bb</option>
+                    <option>.net cc</option>
+                </optgroup>
+            </select><br><br>
+            <label>Certification Taken</label><br>
+            <input type="checkbox" value="IBM"><label>IBM certified</label><br>
+            <input type="checkbox" value="excel"><label>Excel certified</label><br>
+            <input type="checkbox" value="Coursera"><label>coursera certified</label><br><br>
+
+            <button style="background-color: green;" ;type="submit" value="Submit">Submit</button>
+        </fieldset>
+</body>
+
+</html>
